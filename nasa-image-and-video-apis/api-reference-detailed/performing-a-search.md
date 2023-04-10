@@ -1,6 +1,8 @@
-# Performing a search
+---
+description: Performing a search
+---
 
-## Performing a search
+# Performing a search
 
 GET /search?q={q}
 

@@ -1,6 +1,8 @@
-# Retrieving a media album’s contents
+---
+description: Retrieving a media album’s contents
+---
 
-## Retrieving a media album’s contents&#x20;
+# Retrieving a media album’s contents
 
 GET /album/album\_name
 
@@ -24,10 +26,10 @@ curl https://images-api.nasa.gov/album/apollo |
 
 #### Example Response:
 
-<pre class="language-markup" data-overflow="wrap"><code class="lang-markup"><strong>
-</strong>Like search results, album contents will come in the form of <a data-footnote-ref href="#user-content-fn-1">Collection+JSON</a>, which contains results and information about how to retrieve more details about each member:
+Like search results, album contents will come in the form of [Collection+JSON](https://github.com/collection-json/spec), which contains results and information about how to retrieve more details about each member:
 
-{
+<pre class="language-markup" data-overflow="wrap"><code class="lang-markup"><strong>
+</strong>{
 "collection": {
 "href": "https://images-api.nasa.gov/album/apollo",
 "items": [
@@ -71,7 +73,4 @@ curl https://images-api.nasa.gov/album/apollo |
 "version": "1.0"
 }
 }
-
 </code></pre>
-
-[^1]: [https://github.com/collection-json/spec](https://github.com/collection-json/spec)

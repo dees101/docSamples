@@ -46,10 +46,9 @@ The equivalent pre-encoded request looks more typical:
       ?q=apollo%2011
       &description=moon%20landing
       &media_type=image" |
-      python -m json.tool   
-      
+      python -m json.tool         
 ```
 {% endcode %}
 
-&#x20;                                                                                                            &#x20;
+&#x20;                                                                                                          &#x20;
 

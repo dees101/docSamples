@@ -1,6 +1,8 @@
-# Retrieving a media asset’s manifest
+---
+description: Retrieving a media asset’s manifest
+---
 
-## Retrieving a media asset’s manifest&#x20;
+# Retrieving a media asset’s manifest
 
 GET /asset/{nasa\_id}&#x20;
 
@@ -23,9 +25,8 @@ curl https://images-api.nasa.gov/asset/as11-40-5874 |
 
 Asset manifest results will come in the form of [Collection+JSON](https://github.com/collection-json/spec):
 
+{% code overflow="wrap" %}
 ```markup
-
-
 {
 "collection": {
 "href": "https://images-api.nasa.gov/asset/as11-40-5874",
@@ -49,5 +50,5 @@ Asset manifest results will come in the form of [Collection+JSON](https://github
 "version": "1.0"
 }
 }
-
 ```
+{% endcode %}

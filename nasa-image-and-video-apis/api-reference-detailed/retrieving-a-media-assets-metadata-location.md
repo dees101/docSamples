@@ -1,6 +1,8 @@
-# Retrieving a media asset’s metadata location
+---
+description: Retrieving a media asset’s metadata location
+---
 
-## Retrieving a media asset’s metadata location&#x20;
+# Retrieving a media asset’s metadata location
 
 GET /metadata/{nasa\_id}&#x20;
 

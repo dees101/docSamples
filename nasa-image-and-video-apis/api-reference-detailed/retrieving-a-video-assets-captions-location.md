@@ -1,6 +1,8 @@
-# Retrieving a video asset’s captions location
+---
+description: Retrieving a video asset’s captions location
+---
 
-## Retrieving a video asset’s captions location
+# Retrieving a video asset’s captions location
 
 GET /captions/{nasa\_id}
 
