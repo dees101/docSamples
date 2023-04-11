@@ -30,23 +30,24 @@ GET /search?q={q}
 
 #### Example Request:&#x20;
 
+At least one parameter is required, but all individual parameters are optional. All parameter values must be URLencoded. Most HTTP client libraries will take care of this for you. Use --data-urlencode to encode values using curl:
+
 {% code overflow="wrap" %}
 ```markup
-At least one parameter is required, but all individual parameters are optional. All parameter values must be URLencoded. Most HTTP client libraries will take care of this for you. Use --data-urlencode to encode values using curl: 
 
- curl -G https://images-api.nasa.gov/search
-     --data-urlencode "q=apollo 11"
-     --data-urlencode "description=moon landing"
-     --data-urlencode "media_type=image" |
-     python -m json.tool   
-     
+curl -G https://images-api.nasa.gov/search
+ --data-urlencode "q=apollo 11"
+ --data-urlencode "description=moon landing"
+ --data-urlencode "media_type=image" |
+ python -m json.tool
+ 
 The equivalent pre-encoded request looks more typical:
-        
- curl "https://images-api.nasa.gov/search
-      ?q=apollo%2011
-      &description=moon%20landing
-      &media_type=image" |
-      python -m json.tool         
+
+curl "https://images-api.nasa.gov/search
+ ?q=apollo%2011
+ &description=moon%20landing
+ &media_type=image" |
+ python -m json.tool
 ```
 {% endcode %}
 
